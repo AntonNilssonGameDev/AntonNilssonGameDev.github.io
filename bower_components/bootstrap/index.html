@@ -1,83 +1,130 @@
----
-layout: home
----
+<!doctype html>
+<html class="no-js" lang="">
 
-<main class="bd-masthead" id="content" role="main">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-6 mx-auto col-md-6 order-md-2">
-        <img class="img-fluid mb-3 mb-md-0" src="{{ site.baseurl }}/assets/img/bootstrap-stack.png" alt="" width="1024" height="860">
-      </div>
-      <div class="col-md-6 order-md-1 text-center text-md-left pr-md-5">
-        <h1 class="mb-3 bd-text-purple-bright">Bootstrap</h1>
-        <p class="lead">
-          Build responsive, mobile-first projects on the web with the world's most popular front-end component library.
-        </p>
-        <p class="lead mb-4">
-          Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
-        </p>
-        <div class="d-flex flex-column flex-md-row lead mb-3">
-          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/introduction/" class="btn btn-lg btn-bd-primary mb-3 mb-md-0 mr-md-3" onclick="ga('send', 'event', 'Jumbotron actions', 'Get started', 'Get started');">Get started</a>
-          <a href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/" class="btn btn-lg btn-outline-secondary" onclick="ga('send', 'event', 'Jumbotron actions', 'Download', 'Download {{ site.current_version }}');">Download</a>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-portfolio">
+    <a class="navbar-brand" href="index.html">Anton Nilsson</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="resume.html">About Me</a></li>      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid text-center container-jumbo">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-1">
+          <h1>I'm Anton Nilsson</h1>
+          <p class="lead">I'm a Gameplay Programmer</p>
         </div>
-        <p class="text-muted mb-0">
-          Currently v{{ site.current_version }}
-        </p>
       </div>
     </div>
-    {% include ads.html %}
-  </div>
-</main>
-
-<div class="masthead-followup row m-0 border border-white">
-  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
-    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-    {% include icons/import.svg width="32" height="32" class="text-primary mb-2" %}
-    <h3>Installation</h3>
-    <p>Include Bootstrap's source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don't include documentation, but do include our build system and readme.</p>
-
-{% highlight sh %}
-npm install bootstrap
-{% endhighlight %}
-
-{% highlight sh %}
-gem install bootstrap -v {{ site.current_ruby_version }}
-{% endhighlight %}
-
-    <hr class="half-rule">
-    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/getting-started/download/">Read installation docs</a>
   </div>
 
-  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
-    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-    {% include icons/download.svg width="32" height="32" class="text-primary mb-2" %}
-    <h3>BootstrapCDN</h3>
-    <p>When you only need to include Bootstrap's compiled CSS or JS, you can use <a href="https://www.bootstrapcdn.com/">BootstrapCDN</a>.</p>
+  <div class="container-fluid portfolio">
+    
+    <h2 class="portfolio-title">Portfolio</h2>
 
-<h5>CSS only</h5>
-{% highlight html %}
-<link rel="stylesheet" href="{{ site.cdn.css }}" integrity="{{ site.cdn.css_hash }}" crossorigin="anonymous">
-{% endhighlight %}
-
-<h5>JS, Popper.js, and jQuery</h5>
-{% highlight html %}
-<script src="{{ site.cdn.jquery }}" integrity="{{ site.cdn.jquery_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.cdn.popper }}" integrity="{{ site.cdn.popper_hash }}" crossorigin="anonymous"></script>
-<script src="{{ site.cdn.js }}" integrity="{{ site.cdn.js_hash }}" crossorigin="anonymous"></script>
-{% endhighlight %}
-    <hr class="half-rule">
-    <a class="btn btn-outline-primary" href="{{ site.baseurl }}/docs/{{ site.docs_version }}/layout/overview/">Explore the docs</a>
+    <div class="row portfolio-items">
+      <div class="col-md-6 post">
+        <a href="#"><img src="img/avalanche.png" class="img-fluid mx-auto d-block"></a>
+        <article class="post-excerpt">
+          <header>
+            <a href="https://www.playgroundsquad.com/projects/prototype-4/" target="_blank">
+              <h3>Avalanche</h3>
+            </a>
+          </header>
+          <p>
+            A physics-based racing game where you speed through a course, creating alternate paths with magic.
+          </p>
+        </article>
+      </div>
+      <div class="col-md-6 post">
+        <a href="#"><img src="img/guanna.png" class="img-fluid mx-auto d-block"></a>
+        <article class="post-excerpt">
+          <header>
+            <a href="https://www.playgroundsquad.com/projects/guanna/" target="_blank">
+              <h3>Guänna</h3>
+            </a>
+          </header>
+          <p>
+            A 2.5D platformer set in the dark forests of Dalarna. You must traverse through the woods using your ever-growing hair as ropes and ladders.
+          </p>
+        </article>
+      </div>
+    </div>
   </div>
 
-  <div class="col-12 col-md-4 p-3 p-md-5 bg-light border border-white">
-    <!-- Icon by Bytesize https://github.com/danklammer/bytesize-icons -->
-    {% include icons/lightning.svg width="32" height="32" class="text-primary mb-2" %}
-    <h3>Official Themes</h3>
-    <p>
-      Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
-    </p>
-    <img class="img-fluid mt-3 mx-auto" src="{{ site.baseurl }}/assets/img/bootstrap-themes.png" alt="Bootstrap Themes" width="1024" height="388">
-    <hr class="half-rule">
-    <a href="{{ site.themes }}" class="btn btn-outline-primary">Browse themes</a>
+  <div class="container-fluid site-footer">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="tel:+46760249308"><i class="fa fa-phone col-sm-12"></i></a>
+          <a href="tel:+46760249308"><p class="col-sm-12">+46 760 24 93 08</p></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="mailto:antonnilssondeveloper@gmail.com"><i class="fa fa-envelope col-sm-12"></i></a>
+          <a href="mailto:antonnilssondeveloper@gmail.com"><p class="col-sm-12">antonnilssondeveloper@gmail.com</p></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="https://www.linkedin.com/in/anton-nilsson-41376310b/" target="_blank"><i class="fa fa-linkedin col-sm-12"></i></a>
+          <a href="https://www.linkedin.com/in/anton-nilsson-41376310b/" target="_blank"><p class="col-sm-12">LinkedIn</p></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="https://twitter.com/Hatteist?lang=sv" target="_blank"><i class="fa fa-twitter col-sm-12"></i></a>
+          <a href="https://twitter.com/Hatteist?lang=sv" target="_blank"><p class="col-sm-12">Twitter</p></a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
+
+</html>
