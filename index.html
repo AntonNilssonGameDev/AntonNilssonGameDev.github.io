@@ -1,74 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Anton Nilsson - Game Programmer</title>
-	<link href="css/jquery.bxslider.css" rel="stylesheet" />
-	<link href="style.css" rel="stylesheet">
-	<link href="css/font-awesome.min.css" rel="stylesheet"/>
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
 
-	<header>
-		<div class = "intro">
-			<h1>Anton Nilsson</h1>
-			<h2>Game Programmer</h2>
-		</div>
-	</header>
-	
-	<div class="wrapper">
-		<section class="about">
-		<div class="about-content">
-			<h3>Hi, and welcome to the first draft of my portfolio</h3>
-			<p>
-				This website is a work in progress. Below, you'll find information about a few games I've been writing code for. I'll add my resume and stuff as soon as I get this site hosted.
-			</p>
-		</div>
-		</section>
-	</div>
+<body class="portfolio">
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
 
-	<div class="wrapper">
-		<h3>My Work</h3>
-		<section class="work">
+  <!-- Add your site or application content here -->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-portfolio" style="margin-bottom: 1rem;>
+    <a class="navbar-brand" href="index.html">Anton Nilsson</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-			<div class="image-area left"><img alt="Avalanche" src="img/pics/Avalanche.jpg"/></div>
-			<div class="text-box">
-				<div class="text-box-content">
-					<h3>Avalanche</h3>
-					<p>A physics-based racing game built in Tengine with the use of Havok</p><a class="button" href="https://www.playgroundsquad.com/projects/prototype-4/" target="_blank">View Game</a>
-				</div>
-			</div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="resume.html">About Me</a></li>      </ul>
+    </div>
+  </nav>
 
-			<div class="image-area right"><img alt="Guänna" src="img/pics/Guanna372x192.png"/></div>
-			<div class="text-box">
-				<div class="text-box-content">
-					<h3>Guänna</h3>
-					<p>A spooky 2.5D platformer set in the dark woods of Dalarna</p><a href="https://www.playgroundsquad.com/projects/guanna/" target="_blank" class="button">View Game</a>
-				</div>
-			</div>
+  <div class="container-fluid text-center container-jumbo portfolio"">
+    <div class="jumbotron">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-1">
+          <h1>Anton Nilsson</h1>
+          <p class="lead">Gameplay Programmer</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-		</section>
-	</div>
+  <div class="container-fluid portfolio">
+    
+    <h2 class="portfolio-title">Portfolio</h2>
 
-	<footer>
-		<div id="banner-wrapper">
-			<div class="icon-text">
-				
-				<div class="icon-text-text">
-					<ul class="social">
-						<li><a href="mailto:antonnilssondeveloper@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/anton-nilsson-41376310b/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="https://twitter.com/Hatteist?lang=sv" target="_blank"><i class="fa fa-twitter"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+    <div class="row portfolio-items">
+    <a href="https://www.playgroundsquad.com/spelprojekt/superhero-intern/" target="_blank">
+        <div class="col-md-6 post">
+          <img src="img/SuperHeroInternPoster.png" class="img-fluid mx-auto d-block">
+        <article class="post-excerpt" style="color: #f5f5f5">
+          <header>
+              <h3>SuperHeroIntern</h3>
+            </a>
+          </header>
+          <p>
+            A chaotic office simulator, in which you put on the role of an intern at Superhero Corp. Use your limited telepathic abilities to prove that you are, in fact, a worthy addition to the force!
+          </p>
+          <h6>Main responsibilites</h6>
+          <ul>
+            <li>Player control and interactions</li>
+            <li>Elemental interactions</li>
+            <li>Various work stations</li>
+            <li>Quests</li>
+          </ul>
+        </article>
+        </div>
+      </a>
+      <a href="https://www.playgroundsquad.com/spelprojekt/prototype-4/" target="_blank">
+        <div class="col-md-6 post">
+          <img src="img/avalanche.png" class="img-fluid mx-auto d-block">
+        <article class="post-excerpt" style="color: #f5f5f5">
+          <header>
+              <h3>Avalanche</h3>
+            </a>
+          </header>
+          <p>
+            A single player time attack, where you control a little earth mage speeding down a mountain. You can boost, dodge and use earth magic to form alternate paths.
+          </p>
+          <h6>Main responsibilites</h6>
+          <ul>
+            <li>Camera behaviour</li>
+            <li>Terraforming</li>
+            <li>Player movement</li>
+            <li>Cinematics</li>
+          </ul>
+        </article>
+        </div>
+      </a>
+      <a href="https://www.playgroundsquad.com/spelprojekt/guanna/" target="_blank">
+        <div class="col-md-6 post">
+          <img src="img/badhairday.png" class="img-fluid mx-auto d-block">
+        <article class="post-excerpt" style="color: #f5f5f5">
+          <header>
+              <h3>Guänna</h3>
+            </a>
+          </header>
+          <p>
+            A 2.5D platformer set in the dark forests of Dalarna. You must traverse through the woods using your ever-growing hair as ropes and ladders.
+          </p>
+          <h6>Main responsibilites</h6>
+          <ul>
+            <li>Player State Machine</li>
+            <li>Bridge/Ladder Building Functionality</li>
+            <li>UI</li>
+            <li>Movable Objects</li>
+            <li>Camera Behaviour</li>
+          </ul>
+        </article>
+        </div>
+      </a>
+      <a href="https://youtu.be/yY8yjgobmgQ" target="_blank">
+        <div class="col-md-6 post">
+          <img src="img/colorofthewitch.png" class="img-fluid mx-auto d-block">
+        <article class="post-excerpt" style="color: #f5f5f5">
+          <header>
+              <h3>Colors Of The Witch</h3>
+            </a>
+          </header>
+          <p>
+            A 4-player brawler where you try to paint more of the map than your opponents. Developed in 48 hours during a game jam.
+          </p>
+        </article>
+        </div>
+      </a>
+    </div>
+  </div>
 
+  <div class="container-fluid site-footer">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="tel:+46760249308"><i class="fa fa-phone col-sm-12"></i></a>
+          <a href="tel:+46760249308"><p class="col-sm-12">+46 760 24 93 08</p></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="mailto:antonnilssondeveloper@gmail.com"><i class="fa fa-envelope col-sm-12"></i></a>
+          <a href="mailto:antonnilssondeveloper@gmail.com"><p class="col-sm-12">antonnilssondeveloper@gmail.com</p></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="https://www.linkedin.com/in/anton-nilsson-41376310b/" target="_blank"><i class="fa fa-linkedin col-sm-12"></i></a>
+          <a href="https://www.linkedin.com/in/anton-nilsson-41376310b/" target="_blank"><p class="col-sm-12">LinkedIn</p></a>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="footer-element">
+          <a href="https://twitter.com/Hatteist?lang=sv" target="_blank"><i class="fa fa-twitter col-sm-12"></i></a>
+          <a href="https://twitter.com/Hatteist?lang=sv" target="_blank"><p class="col-sm-12">Twitter</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
+
 </html>
