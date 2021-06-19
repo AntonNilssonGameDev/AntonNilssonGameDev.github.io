@@ -47,6 +47,14 @@ p {
 	margin-left: 4.2rem;
 }
 
+.portfolio-subtitle {
+	background-color: #222;
+	padding: 15px 15px 10px 0;
+	font-weight: bold;
+	color: #f5f5f5;
+	margin-left: 4.2rem;
+}
+
 .portfolio-nav-row {
 	background: #111;
 }
