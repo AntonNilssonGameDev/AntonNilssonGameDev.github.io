@@ -25,6 +25,7 @@ p {
 .navbar-brand {
 	font-weight: bold;
 	margin-left: 4.2rem;
+	align-content: center;
 }
 
 .navbar-nav> li a {
