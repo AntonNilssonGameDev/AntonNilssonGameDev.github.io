@@ -45,6 +45,7 @@ p {
 	font-weight: bold;
 	color: #f5f5f5;
 	margin-left: 4.2rem;
+	text-align: center;
 }
 
 .portfolio-subtitle {
@@ -53,6 +54,11 @@ p {
 	font-weight: bold;
 	color: #f5f5f5;
 	margin-left: 4.2rem;
+	text-align: center;
+}
+
+.portfolio-item-title {
+	text-align: center;
 }
 
 .portfolio-nav-row {
